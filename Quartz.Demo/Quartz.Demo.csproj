@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp.Views.WindowsForms" Version="2.88.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Quartz.Core\Quartz.Core.csproj" />
+    <ProjectReference Include="..\Quartz.DOM\Quartz.DOM.csproj" />
+    <ProjectReference Include="..\Quartz.Rendering\Quartz.Rendering.csproj" />
+    <ProjectReference Include="..\Quartz.Styling\Quartz.Styling.csproj" />
+  </ItemGroup>
+
+</Project>
