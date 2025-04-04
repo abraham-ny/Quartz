@@ -11,6 +11,14 @@ public class EventSystem
     /// </summary>
     /// <param name="eventName">Name of the event to subscribe to</param>
     /// <param name="handler">Callback to invoke when event occurs</param>
+    /// <example>
+    /// <code>
+    /// var eventSystem = new EventSystem();
+    /// eventSystem.Subscribe("click", data => {
+    ///     Console.WriteLine($"Click event: {data}");
+    /// });
+    /// </code>
+    /// </example>
     public void Subscribe(string eventName, Action<object> handler);
 
     /// <summary>
@@ -50,6 +58,13 @@ public class Element
     /// <summary>
     /// Gets the child elements of this element
     /// </summary>
+    /// <example>
+    /// <code>
+    /// var div = new Element("div");
+    /// div.Children.Add(new Element("span"));
+    /// Console.WriteLine(div.Children.Count); // Output: 1
+    /// </code>
+    /// </example>
     public List<Element> Children { get; }
 
     /// <summary>
@@ -95,6 +110,18 @@ public class PageRenderer
     /// </summary>
     /// <param name="document">Document to render</param>
     /// <exception cref="ArgumentNullException">Thrown if document is null</exception>
+    /// <example>
+    /// <code>
+    /// var surface = SKSurface.Create(...);
+    /// var paintEngine = new PaintEngine(surface);
+    /// var layoutEngine = new LayoutEngine();
+    /// var renderer = new PageRenderer(paintEngine, layoutEngine);
+    ///
+    /// var doc = new Document();
+    /// doc.RootElement = new Element("div");
+    /// renderer.Render(doc);
+    /// </code>
+    /// </example>
     public void Render(Document document);
 }
 ```
