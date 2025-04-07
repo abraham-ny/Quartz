@@ -9,31 +9,86 @@ namespace Origin.Styling
         public Stylesheet Parse(string cssText)
         {
             var stylesheet = new Stylesheet();
-            var tokenizer = new CssTokenizer(cssText);
-            var tokens = tokenizer.Tokenize();
-            
-            var parser = new CssRuleParser(tokens);
-            while (parser.HasMoreRules)
+            try 
             {
-                if (parser.Peek() == "@media")
+                var tokenizer = new CssTokenizer(cssText);
+                var tokens = tokenizer.Tokenize();
+                
+                var parser = new CssRuleParser(tokens);
+                while (parser.HasMoreRules)
                 {
-                    var mediaQuery = ParseMediaQuery(parser);
-                    if (mediaQuery != null)
+                    if (parser.Peek() == "@media")
                     {
-                        stylesheet.MediaQueries.Add(mediaQuery);
+                        var mediaQuery = ParseMediaQuery(parser);
+                        if (mediaQuery != null)
+                        {
+                            stylesheet.MediaQueries.Add(mediaQuery);
+                        }
                     }
-                }
-                else
-                {
-                    var rule = parser.ParseRule();
-                    if (rule != null)
+                    else if (parser.Peek() == "@keyframes")
                     {
-                        stylesheet.Rules.Add(rule);
+                        var animation = ParseKeyframes(parser);
+                        if (animation != null)
+                        {
+                            stylesheet.Animations.Add(animation);
+                        }
+                    }
+                    else if (parser.Peek() == "--")
+                    {
+                        var variable = ParseCustomProperty(parser);
+                        if (variable != null)
+                        {
+                            stylesheet.Variables.Add(variable);
+                        }
+                    }
+                    else
+                    {
+                        var rule = parser.ParseRule();
+                        if (rule != null)
+                        {
+                            stylesheet.Rules.Add(rule);
+                        }
                     }
                 }
             }
+            catch (CssParseException ex)
+            {
+                Console.WriteLine($"CSS parse error: {ex.Message}");
+            }
             
             return stylesheet;
+        }
+
+        private KeyframeAnimation ParseKeyframes(CssRuleParser parser)
+        {
+            parser.Consume("@keyframes");
+            var name = parser.ReadUntil("{").Trim();
+            parser.Consume("{");
+            
+            var animation = new KeyframeAnimation { Name = name };
+            
+            while (!parser.Peek().Equals("}"))
+            {
+                var keyframe = parser.ParseKeyframe();
+                if (keyframe != null)
+                {
+                    animation.Keyframes.Add(keyframe);
+                }
+            }
+            
+            parser.Consume("}");
+            return animation;
+        }
+
+        private CssVariable ParseCustomProperty(CssRuleParser parser)
+        {
+            parser.Consume("--");
+            var name = parser.ReadUntil(":").Trim();
+            parser.Consume(":");
+            var value = parser.ReadUntil(";").Trim();
+            parser.Consume(";");
+            
+            return new CssVariable(name, value);
         }
 
         private MediaQuery ParseMediaQuery(CssRuleParser parser)

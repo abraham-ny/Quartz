@@ -8,7 +8,15 @@ namespace Origin.Networking
     public sealed class NetworkManager : IDisposable
     {
         private readonly ConcurrentQueue<HttpRequest> _requestQueue = new();
-        private readonly HttpClient _httpClient = new();
+        private readonly HttpClient _httpClient;
+        private readonly UserAgent _userAgent;
+
+        public NetworkManager(UserAgent userAgent)
+        {
+            _userAgent = userAgent;
+            _httpClient = new HttpClient();
+            _httpClient.DefaultRequestHeaders.UserAgent.ParseAdd(_userAgent.AgentString);
+        }
         private bool _isRunning;
 
         public void Initialize()

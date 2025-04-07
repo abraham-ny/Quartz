@@ -6,6 +6,16 @@ namespace Origin.DOM
     {
         public Element? RootElement { get; set; }
         public List<Stylesheet> Stylesheets { get; } = new();
+        public List<Element> Elements { get; } = new();
+        
+        public void AddElement(Element element)
+        {
+            Elements.Add(element);
+            if (RootElement == null && element.Parent == null)
+            {
+                RootElement = element;
+            }
+        }
     }
 
     public class Element

@@ -1,22 +1,24 @@
-Origin Browser Engine - Change Log
-==================================
+# Origin Browser Engine Changelog
 
-[2023-11-15 14:30:00 UTC] v0.1.0 - Initial Version
-- Project started as AI-built browser engine
-- Core engine architecture established
-- Basic DOM, rendering, and styling modules created
+## Version 0.3.0 - Unreleased
+- 2023-11-15 16:00:00: Networking layer implementation
+  - Added UserAgent class for custom user agent strings
+  - Enhanced NetworkManager to support user agent configuration
+  - Implemented HTTP request/response handling
 
-[2023-11-15 14:30:00 UTC] v0.1.0 - Changelog System
-- Created initial changelog file to track all future changes
+## Version 0.2.0 - CSS Parser
+- 2023-11-15 15:00:00: Enhanced CSS parser implementation
+  - Added support for @keyframes animations
+  - Implemented CSS variables (custom properties)
+  - Added error handling for CSS parsing
+  - Improved parser structure for future extensions
 
-[2023-11-15 15:45:00 UTC] v0.1.0 - Project Renaming
-- Renamed all project directories from "Quartz" to "Origin":
-  * Quartz.Core → Origin.Core
-  * Quartz.Demo → Origin.Demo
-  * Quartz.Docs → Origin.Docs
-  * Quartz.DOM → Origin.DOM
-  * Quartz.Networking → Origin.Networking
-  * Quartz.Rendering → Origin.Rendering
-  * Quartz.Styling → Origin.Styling
-  * Quartz.Tests → Origin.Tests
-  * Quartz.Vostro → Origin.Vostro
+## Version 0.1.0 - HTML5 Parser
+- 2023-11-15 14:30:00: Initial HTML5 parser implementation
+  - Created HTMLParser class with basic parsing capabilities
+  - Added Document.AddElement() method
+  - Created separate Element class with parent/child relationships
+  - Implemented tag name, attribute and text content parsing
+
+## Version 0.0.1 - Initial Structure
+- 2023-11-15 14:00:00: Project initialized with basic DOM structure
