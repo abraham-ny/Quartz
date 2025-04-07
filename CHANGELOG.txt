@@ -8,3 +8,15 @@ Origin Browser Engine - Change Log
 
 [2023-11-15 14:30:00 UTC] v0.1.0 - Changelog System
 - Created initial changelog file to track all future changes
+
+[2023-11-15 15:45:00 UTC] v0.1.0 - Project Renaming
+- Renamed all project directories from "Quartz" to "Origin":
+  * Quartz.Core → Origin.Core
+  * Quartz.Demo → Origin.Demo
+  * Quartz.Docs → Origin.Docs
+  * Quartz.DOM → Origin.DOM
+  * Quartz.Networking → Origin.Networking
+  * Quartz.Rendering → Origin.Rendering
+  * Quartz.Styling → Origin.Styling
+  * Quartz.Tests → Origin.Tests
+  * Quartz.Vostro → Origin.Vostro
