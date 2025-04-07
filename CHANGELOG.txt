@@ -1,0 +1,10 @@
+Quartz Browser Engine - Change Log
+==================================
+
+[2023-11-15 14:30:00 UTC] v0.1.0 - Initial Version
+- Project started as AI-built browser engine
+- Core engine architecture established
+- Basic DOM, rendering, and styling modules created
+
+[2023-11-15 14:30:00 UTC] v0.1.0 - Changelog System
+- Created initial changelog file to track all future changes
