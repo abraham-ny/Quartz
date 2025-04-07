@@ -1,0 +1,31 @@
+# Origin Browser Engine Changelog
+
+## Version 0.4.0 - Unreleased
+- 2023-11-15 17:00:00: Download management system
+  - Implemented DownloadManager for concurrent downloads
+  - Added pause/resume functionality
+  - Supports progress reporting
+  - Configurable concurrency limits
+
+## Version 0.3.0 - Networking
+- 2023-11-15 16:00:00: Networking layer implementation
+  - Added UserAgent class for custom user agent strings
+  - Enhanced NetworkManager to support user agent configuration
+  - Implemented HTTP request/response handling
+
+## Version 0.2.0 - CSS Parser
+- 2023-11-15 15:00:00: Enhanced CSS parser implementation
+  - Added support for @keyframes animations
+  - Implemented CSS variables (custom properties)
+  - Added error handling for CSS parsing
+  - Improved parser structure for future extensions
+
+## Version 0.1.0 - HTML5 Parser
+- 2023-11-15 14:30:00: Initial HTML5 parser implementation
+  - Created HTMLParser class with basic parsing capabilities
+  - Added Document.AddElement() method
+  - Created separate Element class with parent/child relationships
+  - Implemented tag name, attribute and text content parsing
+
+## Version 0.0.1 - Initial Structure
+- 2023-11-15 14:00:00: Project initialized with basic DOM structure
