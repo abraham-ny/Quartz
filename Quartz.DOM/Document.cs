@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Quartz.DOM
+namespace Origin.DOM
 {
     public class Document
     {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Quartz.DOM;
+using Origin.DOM;
 
-namespace Quartz.Styling
+namespace Origin.Styling
 {
     public class StyleContext
     {

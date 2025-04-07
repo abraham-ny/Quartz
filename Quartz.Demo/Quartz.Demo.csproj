@@ -13,10 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Quartz.Core\Quartz.Core.csproj" />
-    <ProjectReference Include="..\Quartz.DOM\Quartz.DOM.csproj" />
-    <ProjectReference Include="..\Quartz.Rendering\Quartz.Rendering.csproj" />
-    <ProjectReference Include="..\Quartz.Styling\Quartz.Styling.csproj" />
+    <ProjectReference Include="..\Origin.Core\Origin.Core.csproj" />
+    <ProjectReference Include="..\Origin.DOM\Origin.DOM.csproj" />
+    <ProjectReference Include="..\Origin.Rendering\Origin.Rendering.csproj" />
+    <ProjectReference Include="..\Origin.Styling\Origin.Styling.csproj" />
   </ItemGroup>
 
 </Project>

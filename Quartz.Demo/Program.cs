@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace Quartz.Demo
+namespace Origin.Demo
 {
     static class Program
     {

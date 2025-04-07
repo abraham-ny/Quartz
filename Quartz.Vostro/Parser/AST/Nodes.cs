@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Quartz.Vostro.Parser.AST
+namespace Origin.Vostro.Parser.AST
 {
     public abstract class Node
     {

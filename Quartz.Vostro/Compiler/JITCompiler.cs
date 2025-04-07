@@ -1,6 +1,6 @@
-using Quartz.Vostro.Parser;
+using Origin.Vostro.Parser;
 
-namespace Quartz.Vostro.Compiler
+namespace Origin.Vostro.Compiler
 {
     public sealed class JITCompiler
     {

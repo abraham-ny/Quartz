@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Quartz.Styling
+namespace Origin.Styling
 {
     public class MediaQuery
     {

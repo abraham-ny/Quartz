@@ -1,4 +1,4 @@
-# Quartz Rendering Engine Architecture
+# Origin Rendering Engine Architecture
 
 ## Core Components
 

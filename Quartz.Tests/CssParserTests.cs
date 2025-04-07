@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Quartz.Styling;
+using Origin.Styling;
 using Xunit;
 
-namespace Quartz.Tests
+namespace Origin.Tests
 {
     public class CssParserTests
     {

@@ -1,8 +1,8 @@
-# Quartz Engine
+# Origin Engine
 
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-Quartz is a modular rendering engine with DOM, styling, and JavaScript capabilities.
+Origin is a modular rendering engine with DOM, styling, and JavaScript capabilities.
 
 ## Features
 - DOM implementation with hierarchical document structure
@@ -19,19 +19,19 @@ Quartz is a modular rendering engine with DOM, styling, and JavaScript capabilit
 
 ### Installation
 ```bash
-git clone https://github.com/your-repo/quartz.git
-cd quartz
+git clone https://github.com/your-repo/Origin.git
+cd Origin
 dotnet restore
 ```
 
 ### Running the Demo
 ```bash
-cd Quartz.Demo
+cd Origin.Demo
 dotnet run
 ```
 
 ## Documentation
-Detailed documentation is available in the [Quartz.Docs](/Quartz.Docs) directory.
+Detailed documentation is available in the [Origin.Docs](/Origin.Docs) directory.
 
 ## Contributing
 We welcome contributions! Please see our [CONTRIBUTING](CONTRIBUTING.md) guide for details.

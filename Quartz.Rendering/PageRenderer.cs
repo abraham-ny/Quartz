@@ -1,7 +1,7 @@
-using Quartz.DOM;
-using Quartz.Styling;
+using Origin.DOM;
+using Origin.Styling;
 
-namespace Quartz.Rendering
+namespace Origin.Rendering
 {
     public class PageRenderer
     {

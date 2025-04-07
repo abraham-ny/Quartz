@@ -1,10 +1,10 @@
-using Quartz.Core;
-using Quartz.Networking;
-using Quartz.Rendering;
-using Quartz.Vostro;
+using Origin.Core;
+using Origin.Networking;
+using Origin.Rendering;
+using Origin.Vostro;
 using Xunit;
 
-namespace Quartz.Tests
+namespace Origin.Tests
 {
     public class BasicTests
     {
@@ -20,7 +20,7 @@ namespace Quartz.Tests
         [Fact]
         public void Engine_InitializesComponents()
         {
-            using var engine = new QuartzEngine();
+            using var engine = new OriginEngine();
             engine.Initialize();
             // If we got here without exceptions, initialization succeeded
             Assert.True(true);

@@ -2,11 +2,11 @@ using System;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
-using Quartz.Networking;
-using Quartz.Rendering;
-using Quartz.Vostro;
+using Origin.Networking;
+using Origin.Rendering;
+using Origin.Vostro;
 
-namespace Quartz.Core
+namespace Origin.Core
 {
     public class EngineInitializationException : Exception
     {
@@ -78,7 +78,7 @@ namespace Quartz.Core
         }
     }
 
-    public sealed class QuartzEngine : IDisposable
+    public sealed class OriginEngine : IDisposable
     {
         private readonly NetworkManager _networkManager;
         private readonly RenderPipeline _renderPipeline;
@@ -88,7 +88,7 @@ namespace Quartz.Core
         private readonly TaskScheduler _taskScheduler = new();
         private bool _isRunning;
 
-        public QuartzEngine()
+        public OriginEngine()
         {
             _networkManager = new NetworkManager();
             _renderPipeline = new RenderPipeline();

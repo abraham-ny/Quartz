@@ -1,6 +1,6 @@
 using System;
 
-namespace Quartz.Vostro.Runtime
+namespace Origin.Vostro.Runtime
 {
     public struct JsValue
     {

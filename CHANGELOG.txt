@@ -1,4 +1,4 @@
-Quartz Browser Engine - Change Log
+Origin Browser Engine - Change Log
 ==================================
 
 [2023-11-15 14:30:00 UTC] v0.1.0 - Initial Version

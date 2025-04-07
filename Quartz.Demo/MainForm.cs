@@ -1,11 +1,11 @@
 using System;
 using System.Windows.Forms;
-using Quartz.DOM;
-using Quartz.Rendering;
+using Origin.DOM;
+using Origin.Rendering;
 using SkiaSharp;
 using SkiaSharp.Views.Desktop;
 
-namespace Quartz.Demo
+namespace Origin.Demo
 {
     public class MainForm : Form
     {
@@ -15,7 +15,7 @@ namespace Quartz.Demo
 
         public MainForm()
         {
-            Text = "Quartz Renderer Demo";
+            Text = "Origin Renderer Demo";
             Width = 800;
             Height = 600;
 
@@ -55,7 +55,7 @@ namespace Quartz.Demo
 
             var heading = new Element("h1")
             {
-                TextContent = "Hello Quartz!",
+                TextContent = "Hello Origin!",
                 ComputedStyle =
                 {
                     ["color"] = "blue",
@@ -66,7 +66,7 @@ namespace Quartz.Demo
 
             var paragraph = new Element("p")
             {
-                TextContent = "This is rendered by the Quartz engine.",
+                TextContent = "This is rendered by the Origin engine.",
                 ComputedStyle =
                 {
                     ["color"] = "black",

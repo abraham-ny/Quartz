@@ -1,7 +1,7 @@
 # Security Policy
 
 ## Supported Versions
-Currently supported versions of Quartz that receive security updates:
+Currently supported versions of Origin that receive security updates:
 
 | Version | Supported          |
 | ------- | ------------------ |

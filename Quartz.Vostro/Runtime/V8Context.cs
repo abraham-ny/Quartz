@@ -1,7 +1,7 @@
 using System;
-using Quartz.Vostro.Compiler;
+using Origin.Vostro.Compiler;
 
-namespace Quartz.Vostro.Runtime
+namespace Origin.Vostro.Runtime
 {
     public sealed class V8Context : IDisposable
     {

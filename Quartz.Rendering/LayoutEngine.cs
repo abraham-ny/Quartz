@@ -1,8 +1,8 @@
 using System;
 using System.Drawing;
-using Quartz.DOM;
+using Origin.DOM;
 
-namespace Quartz.Rendering
+namespace Origin.Rendering
 {
     public class LayoutEngine
     {

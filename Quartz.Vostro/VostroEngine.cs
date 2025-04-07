@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Concurrent;
 using System.Threading.Tasks;
-using Quartz.Vostro.Compiler;
-using Quartz.Vostro.Runtime;
+using Origin.Vostro.Compiler;
+using Origin.Vostro.Runtime;
 
-namespace Quartz.Vostro
+namespace Origin.Vostro
 {
     public sealed class VostroEngine : IDisposable
     {

@@ -1,6 +1,6 @@
-# Contributing to Quartz
+# Contributing to Origin
 
-Thank you for considering contributing to Quartz! We welcome all forms of contributions, including:
+Thank you for considering contributing to Origin! We welcome all forms of contributions, including:
 
 - Bug reports
 - Feature requests

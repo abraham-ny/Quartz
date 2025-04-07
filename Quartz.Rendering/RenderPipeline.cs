@@ -1,11 +1,11 @@
 using System;
 using System.Drawing;
 using System.Threading.Tasks;
-using Quartz.Core;
-using Quartz.DOM;
-using Quartz.Styling;
+using Origin.Core;
+using Origin.DOM;
+using Origin.Styling;
 
-namespace Quartz.Rendering
+namespace Origin.Rendering
 {
     public sealed class RenderPipeline : IDisposable
     {

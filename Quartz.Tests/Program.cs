@@ -4,7 +4,7 @@ using Xunit.Runner.InProc.SystemConsole;
 
 [assembly: TestFramework("Xunit.Runner.InProc.SystemConsole.TestFramework", "Xunit.Runner.InProc.SystemConsole")]
 
-namespace Quartz.Tests
+namespace Origin.Tests
 {
     class Program
     {

@@ -1,8 +1,8 @@
 using System;
-using Quartz.DOM;
+using Origin.DOM;
 using SkiaSharp;
 
-namespace Quartz.Rendering
+namespace Origin.Rendering
 {
     public class PaintEngine
     {

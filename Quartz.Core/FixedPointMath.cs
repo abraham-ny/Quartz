@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.CompilerServices;
 
-namespace Quartz.Core
+namespace Origin.Core
 {
     public static class FixedPointMath
     {

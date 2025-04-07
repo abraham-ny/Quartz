@@ -1,7 +1,7 @@
 using System;
-using Quartz.Vostro.Parser.AST;
+using Origin.Vostro.Parser.AST;
 
-namespace Quartz.Vostro.Parser
+namespace Origin.Vostro.Parser
 {
     public sealed class JavaScriptParser
     {

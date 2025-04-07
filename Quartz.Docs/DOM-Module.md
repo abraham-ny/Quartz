@@ -1,7 +1,7 @@
 # DOM Module Documentation
 
 ## Overview
-The DOM module implements the Document Object Model for Quartz, representing the hierarchical structure of documents.
+The DOM module implements the Document Object Model for Origin, representing the hierarchical structure of documents.
 
 ## Key Components
 
